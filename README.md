@@ -1,6 +1,9 @@
-# ⚛⚛ Proyecto Base .NET 8 usando buenas prácticas. ⚛⚛
+# ⚛ Proyecto Base Simple CRUD .NET 8 usando buenas prácticas. ⚛
 ### 1- Métodos async en los controlladores (_db.Remove, _db.Update no son async)
-### 2- ActionResult 
+### 2- Definir el tipo de retorno ActionResult.
+```bash
+public async Task<ActionResult<APIResponse>> GetVillas()
+```
 ### 3- Usar [ProduceResponse] tipos de respuesta
 ```bash
     [ProducesResponseType(204)]
