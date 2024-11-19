@@ -1,4 +1,4 @@
-# Proyecto Base .NET 8 usando buenas prácticas.
+# ⚛⚛ Proyecto Base .NET 8 usando buenas prácticas. ⚛⚛
 ### 1- Métodos async en los controlladores (_db.Remove, _db.Update no son async)
 ### 2- ActionResult 
 ### 3- Usar [ProduceResponse] tipos de respuesta
@@ -96,7 +96,7 @@
    }
 ```
 
-### 11- En Prod no interecciona desde el controlador con la bd directamente se usan los repositorios ( Usar Patrón Repositorio).
+### 11- En Prod no se interacciona desde el controlador con la base de datos directamente, se usan los repositorios ( Usar Patrón Repositorio).
 ```bash
 
     public class Repositorio<T> : IRepository<T> where T : class
